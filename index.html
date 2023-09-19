@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            iframe {
+                border: none;
+            }
+            #root {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                display: flex;
+                align-items: stretch;
+            }
+            #weather {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root">
+            <iframe id=weather src="https://embed.windy.com/embed2.html?lat=40.695&lon=-73.939&detailLat=40.741&detailLon=-73.939&width=650&height=450&zoom=11&level=surface&overlay=rain&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=default&metricTemp=default&radarRange=-1"></iframe>
+            <iframe src="https://realtimerail.nyc/stops/G22"></iframe>
+            <iframe src="https://realtimerail.nyc/stops/F09"></iframe>
+            <iframe src="https://realtimerail.nyc/stops/719"></iframe>
+        </div>
+    </body>
+</html>
